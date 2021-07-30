@@ -1,3 +1,4 @@
+/* Global Selector Styling */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,23 +8,32 @@
 body {
     background-color: #d9dcd6;
 }
-
+/* Defines the color of all anchor text to be white and removes the text decoration */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* defines the font size for all <p></p> tags to be 16px */
+p {
+    font-size: 16px;
+}
+/* sets the padding of the header to 20 px on all size, defines the font family */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* Defines the font size for the h1 tag within the header to be size 48 and to display the element inline in block format */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* changes the colors of the letters "seo" in the company name to a a grey tone */
 .header h1 .seo {
     color: #d9dcd6;
 }
-
+/* pads the header section sub element to have a padding of 15px from the top, a 20 pixel margin on the right for spacing and a defined font family specific to the .header section sub element*/
 .header section {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,25 +41,13 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header section ul {
-    list-style-type: none;
-}
-
+/* defines the list sub elements to have no list style , be displayed inline as a block object within the header with a left indenting margin of 25px  */
 .header section ul li {
-    display: inline-block;
-    margin-left: 25px;
+     list-style-type: none;
+     display: inline-block;
+     margin-left: 25px;
 }
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
+/* sets the main landing page image to a height of 800 pixels and to be 100 percent of the screen withd. It also has a bottom margin of 25 pixels and the picture is set to be enctered and cover the entire hero elemenet. */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,23 +56,24 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* applies the property float left with a right margin of 25px */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* applies the property float left with a left margin of 25px */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* defines the witth of elements with the .contents class to have a width of 75 percent of the line while displaying in inline block format and a margin of 20 pixels to the left */
 .contents {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* defines the .benefits class to have a 20 pixel margin on the right with 20 pixels of margin all around.  It also has a defined witth of 20% of the available line while retaining 100% height. A font family is also defined  as well as a background color   */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,21 +85,23 @@ p {
     background-color: #2589bd;
 }
 
+/* applies a bottom margin of 32px and changes the color of text to white for all elements with the .benefit tag */
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
+/* applies a 10px margin to the bottom of all h3 tags with an inherited .benefit class type */
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* applies a 10px margin to all sides of the image tag with inherited .benifit class type and caps the max width to be 150px */
 .benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* applies a 20px margin to the bottom of the content class as well as 50px of padding all around. It defines elements with this class to have a height of 300px, a defined font family, an assigned background color andn a specified font color */
 .content {
     margin-bottom: 20px;
     padding: 50px;
@@ -109,16 +110,16 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+/* Sets the max height of an img tag with inherited class content to  200px */
 .content img {
     max-height: 200px;
 }
-
+/* sets the h2 tags with inherited class content to have a bottom margin of 20px and a font size of 36 pixels */
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* Defines the style of the footer class to have 30 px of padding on all sides, a defined font family and aligns all the text to the center of the line */
 .footer {
     padding: 30px;
     clear: both;
@@ -126,6 +127,7 @@ p {
     text-align: center;
 }
 
+/* sets the h2 tags with inherited class footer to have a font sizeo of 20px */
 .footer h2 {
     font-size: 20px;
 }
